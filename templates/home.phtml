@@ -1,0 +1,60 @@
+<main id="home">
+    <h2>Veuillez vous identifier</h2>
+    <section>
+        <h3>Connexion</h3>
+        <form id="loginForm" action="logic/login.php" method="POST">
+            <fieldset>
+                <label for="loginEmail">
+                    Email
+                </label>
+                <input type="email" name="loginEmail" id="loginEmail" />
+            </fieldset>
+            <fieldset>
+                <label for="loginPassword">
+                    Mot de passe
+                </label>
+                <input type="password" name="loginPassword" id="loginPassword" />
+            </fieldset>
+            <button type="submit">Se connecter</button>
+        </form>
+    </section>
+    <section>
+        <h3>Inscription</h3>
+        <form id="signupForm" action="logic/signup.php" method="POST">
+            <fieldset>
+                <label for="signupUsername">
+                    Nom d'utilisateur
+                </label>
+                <input type="text" name="signupUsername" id="signupUsername" />
+            </fieldset>
+            <fieldset>
+                <label for="signupEmail">
+                    Email
+                </label>
+                <input type="email" name="signupEmail" id="signupEmail" />
+            </fieldset>
+            <fieldset>
+                <label for="signupPassword">
+                    Mot de passe
+                </label>
+                <input type="password" name="signupPassword" id="signupPassword" />
+            </fieldset>
+            <fieldset>
+                <label for="signupConfirmPassword">
+                    Confirmer le mot de passe
+                </label>
+                <input type="password" name="signupConfirmPassword" id="signupConfirmPassword" />
+            </fieldset>
+            <fieldset>
+                <label for="signupRole">
+                    Rôle
+                </label>
+                <select id="signupRole" name="signupRole">
+                    <option value="user">Utilisateur</option>
+                    <option value="admin">Administrateur</option>
+                </select>
+            </fieldset>
+            <button type="submit">Créer un compte</button>
+        </form>
+    </section>
+</main>
